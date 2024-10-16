@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../../INSTALLATION/LOCAL INSTALLATION/jquery-3.7.1.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="Container">
+      <h1 class="Head">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        deserunt corporis sapiente non rerum earum cumque laudantium illum.
+        Minus quidem laudantium aut voluptatum illo.
+      </h1>
+      <p class="Para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas saepe
+        dicta unde ab sint ex voluptatem praesentium voluptate, rerum, accusamus
+        rem sapiente, nesciunt quisquam.
+      </p>
+    </div>
+    <button id="remove">REMOVE</button>
+    <button id="empty">EMPTY</button>
+    <script>
+      $(document).ready(function () {
+        $("#remove").click(function () {
+          $(".Head").remove();
+        });
+
+        $('#empty').click(function (){
+            $(".Para").empty();
+        });
+      })
+    </script>
+  </body>
+</html>

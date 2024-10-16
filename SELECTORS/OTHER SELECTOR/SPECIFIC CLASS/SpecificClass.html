@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../INSTALLATION/LOCAL INSTALLATION/jquery-3.7.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Selects all <p> elements with class="intro"</h1>
+    <h2 class="intro">This is a heading</h2>
+
+    <p class="intro">This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <button>Click me</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p.intro").css("color","red")
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../INSTALLATION/LOCAL INSTALLATION/jquery-3.7.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="Container">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, qui harum.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odio nisi molestias architecto, excepturi fugit!</p>
+    </div>
+    <script>
+        $(document).ready(function() {
+            var html = $('h1')[0].outerHTML;
+            var temp = {"html":html}; 
+            var obj  = JSON.stringify(temp);
+            console.log(obj); 
+        });
+    </script>
+</body>
+</html>
